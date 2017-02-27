@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="APP_ID">143-101</string>
+    <string name="APP_SECRET">4BAF228B5DB1416E94C6C506330B81F5</string>
+    <string name="app_name">bboxapi</string>
+</resources>
