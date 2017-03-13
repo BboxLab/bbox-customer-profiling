@@ -203,8 +203,8 @@ public class CustomerProfilingService extends Service {
                                                                 lastEvent = new JSONObject(application.toString());
                                                                 if (lastEvent.get("packageName").equals("com.ifeelsmart.smartui")) {
                                                                     Bbox.getInstance().getCurrentChannel(bbox.getIp(),
-                                                                            getResources().getString(fr.bouyguestelecom.bboxapi.R.string.APP_ID),
-                                                                            getResources().getString(fr.bouyguestelecom.bboxapi.R.string.APP_SECRET),
+                                                                            BuildConfig.BBOXAPI_APP_ID,
+                                                                            BuildConfig.BBOXAPI_APP_SECRET,
                                                                             new IBboxGetCurrentChannel() {
                                                                                 @Override
                                                                                 public void onResponse(final Channel channel) {

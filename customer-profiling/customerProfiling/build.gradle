@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
 
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.1'
 
     defaultConfig {
         applicationId "fr.bouyguestelecom.tv.bridge.customer"
@@ -64,11 +64,7 @@ dependencies {
                 exclude module: 'support-v4'
             }
     compile(name: 'iotf-library-debug', ext: 'aar')
-
-//    compile 'fr.bouyguestelecom.dev:secondscreen-library:0.3.1'
-
-    //compile(name: 'lib-bbox-secondscreen-0.3.1-debug', ext: 'aar')
-    compile(name: 'app-debug', ext: 'aar')
+    compile 'fr.bouyguestelecom.dev:bboxapi:1.0'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
 
 
